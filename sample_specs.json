@@ -1,0 +1,38 @@
+{
+    "input_file" :  "absolute/path/to/input/xml/file.xml",
+    "start_row" :   1,
+    "max_count" :   1000,
+    "namespace" :   "www.namespace.com/schemas/schema",
+    "root"  :   {
+        "parent"    :   [
+            {
+                "xpath" :   ".//parent1_xpath",
+                "tag_name"  :   "parent1_tagname",
+                "children"  :   [
+                    {
+                        "name"  :   "child11_name",
+                        "xpath" :   ".//child11_xpath",
+                        "tag_name"  :   "child11_tagname",
+                        "filter"    :   ["123", "456"],
+                        "max_count" :   10
+                    }
+                ]
+            },
+            {
+                "xpath" :   ".//parent2_xpath",
+                "tag_name"  :   "parent2_tagname",
+                "children"  :   [
+                    {
+                        "name"  :   "child21_name",
+                        "xpath" :   ".//child21_xpath",
+                        "tag_name"  :   "child21_tagname"
+                    },
+                    {
+                        "name"  :   "child22_name",
+                        "xpath" :   ".//child22_xpath"
+                    }
+                ]
+            }
+        ]
+    }
+}
